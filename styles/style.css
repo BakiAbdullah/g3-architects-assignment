@@ -16,6 +16,7 @@
   /* ======== Font and typography ====== */
   --body-font: "Work Sans", sans-serif;
   --h1-font-size: 3.9rem;
+  --h1-mobile-size: 2.9rem;
   --h2-font-size: 2.5rem;
   --h3-font-size: 1.2rem;
   --biggest-font-size: 1.6rem;
@@ -111,7 +112,8 @@ nav {
   display: flex;
 }
 .nav_items {
-  gap: 50px;
+  display: flex;
+  gap: 20px;
 }
 .nav_items > a {
   transition: hover ease-in 0.2s;
@@ -357,11 +359,8 @@ footer {
 /* MEDIA Queries for Mobile Device */
 
 @media only screen and (max-width: 576px) {
-  h1,
-  h2,
-  h3 {
-    font-size: var(--small-font-size);
-    font-weight: var(--font-semi-bold);
+  .section__title {
+    font-size: var(--h2-font-size);
   }
   .quick_features,
   .hero_section,
@@ -373,11 +372,13 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  .logo h3 {
+    font-size: var(--biggest-font-size);
+  }
   .nav_container {
     align-items: center;
   }
-  .nav_items,
-  btn-secondary {
+  .nav_items {
     display: none;
   }
   .hamburger.fa-bars {
@@ -450,14 +451,14 @@ footer {
     gap: 0;
   }
   .footer_left {
-   margin-right: 85px;
-   gap: 25px;
+    margin-right: 85px;
+    gap: 25px;
   }
   .footer_end {
     padding: 0 80px;
     border-radius: 2px;
   }
-  .footer_end p{
-   font-size: var(--small-font-size);
+  .footer_end p {
+    font-size: var(--small-font-size);
   }
 }
