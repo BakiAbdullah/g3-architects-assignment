@@ -79,6 +79,7 @@ a {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   color: var(--text-color-light);
+  line-height: 28px;
 }
 
 .btn-primary {
@@ -89,7 +90,7 @@ a {
   border-radius: 8px;
   border: none;
   padding: 20px 30px;
-  margin-top: 30px;
+  margin-top: 35px;
   transition: transform ease-in 0.1s;
 }
 
@@ -137,16 +138,20 @@ nav {
 
 /* --------------- Quick Feature Styles Starts --------------- */
 
-.quick_feature_section{
- margin-top: 80px;
+.quick_feature_section {
+  margin-top: 50px;
 }
-.quick_features{
- display: flex;
- gap: 70px;
+.quick_features {
+  display: flex;
+  gap: 44px;
+  align-items: center;
 }
-.feature_img_container{
- display: grid;
- grid-template-columns: repeat(2, 1fr);
+.feature_img_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.img_container {
+  padding: 10px;
 }
 .color_gray {
   color: var(--text-color-light);
@@ -159,5 +164,49 @@ nav {
 .features_description {
   text-align: left;
 }
+/* ================ Quick Feature Styles Ends================ *
 
-/* ================ Quick Feature Styles Ends================ */
+/* --------- Feature You will Love Styles Starts --------- */
+.feature_you_will_love {
+  margin-top: 130px;
+}
+.features_love {
+  display: flex;
+  align-items: center;
+}
+.features_container {
+  display: flex;
+  flex-direction: column;
+}
+.features_title {
+  margin-bottom: 30px;
+}
+.feature_title::before {
+ content: "";
+ position: absolute;
+ background-color: #ff900e;
+ left: 0;
+ width: 5px;
+ height: 5px;
+ color: var(--primary-btn-color);
+}
+.features_desc {
+  box-shadow: 0px 4px 17px 4px rgb(0 0 0 / 7%);
+  padding: 20px 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.features_desc h3 {
+  font-size: var(--h3-font-size);
+  color: var(--title-color);
+  padding: 10px 0;
+}
+.features_img{
+ margin-left: 50px;
+}
+
+/* ================ Feature You will Love Styles Ends ================ */
+
+/* ----------- Styles Starts ----------- */
+
+/* =========== Styles Ends ============ */
