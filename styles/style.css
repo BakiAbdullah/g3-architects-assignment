@@ -220,6 +220,7 @@ nav {
 .feature_img_right {
   margin-left: 50px;
 }
+
 .btn-secondary {
   position: absolute;
   top: 87%;
@@ -240,7 +241,7 @@ nav {
 }
 .btn_secondary_text {
   color: #fff;
-  font-size: var(--h1-font-size);
+  font-size: var(--h2-font-size);
 }
 /* ================ Feature You will Love Styles Ends ================ */
 
@@ -381,12 +382,6 @@ footer {
   .nav_items {
     display: none;
   }
-  .hamburger.fa-bars {
-    display: block;
-  }
-  /* .hero_section{
-   display: flex;
-  } */
   .hero_description {
     padding: 50px;
   }
@@ -402,26 +397,13 @@ footer {
   .feature_you_will_love {
     padding: 30px;
   }
-  .features_img {
-    /* width: 100%; */
-    padding: 0;
-  }
-  .feature_img_right {
-    margin: 0;
+  .features_img img{
+    display: none;
   }
   .btn-secondary {
-    position: absolute;
-    bottom: 0;
-    left: 32%;
-    z-index: 10;
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-semi-bold);
-    color: #fff;
-    background-color: var(--primary-btn-color);
-    border-radius: 8px;
-    border: none;
-    padding: 20px;
+    display: none;
   }
+  
   .some_facts_section {
     padding: 15px;
   }
