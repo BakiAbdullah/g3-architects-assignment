@@ -232,9 +232,46 @@ nav {
   color: #fff;
   font-size: var(--h1-font-size);
 }
-
 /* ================ Feature You will Love Styles Ends ================ */
 
-/* ----------- Styles Starts ----------- */
+/* ----------- Some Facts Styles Starts ----------- */
+.some_facts_title {
+  padding-right: 35%;
+  margin: 120px auto;
+}
 
-/* =========== Styles Ends ============ */
+.some_facts_container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 80px;
+  width: 100%;
+  margin: 0 auto;
+}
+.some_facts_box {
+  width: 260px;
+  height: 260px;
+  font-size: 25px;
+  color: var(--text-color-light);
+  font-weight: var(--font-semi-bold);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid var(--primary-btn-color);
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.some_facts_box h3 {
+  color: var(--nav-text-color);
+  font-size: var(--h2-font-size);
+}
+.some_facts_box:hover {
+  background-color: rgba(255, 143, 14, 0.6);
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform ease 0.3s;
+}
+/* =========== Some Facts Styles Ends ============ */
