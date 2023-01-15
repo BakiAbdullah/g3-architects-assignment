@@ -18,7 +18,7 @@
   --h1-font-size: 3.9rem;
   --h2-font-size: 2.5rem;
   --h3-font-size: 1.2rem;
-  --biggest-font-size: 1.7rem;
+  --biggest-font-size: 1.6rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
 }
@@ -178,18 +178,27 @@ nav {
   display: flex;
   flex-direction: column;
 }
+.features_img {
+  position: relative;
+  padding-left: 10px;
+}
 .features_title {
   margin-bottom: 30px;
 }
-.feature_title::before {
- content: "";
- position: absolute;
- background-color: #ff900e;
- left: 0;
- width: 5px;
- height: 5px;
- color: var(--primary-btn-color);
+.features_title h1::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 145px;
+  background-color: var(--primary-btn-color);
+  left: 0;
+  position: absolute;
 }
+.features_title h1 {
+  padding-left: 30px;
+  position: relative;
+}
+
 .features_desc {
   box-shadow: 0px 4px 17px 4px rgb(0 0 0 / 7%);
   padding: 20px 15px;
@@ -201,8 +210,27 @@ nav {
   color: var(--title-color);
   padding: 10px 0;
 }
-.features_img{
- margin-left: 50px;
+.feature_img_right {
+  margin-left: 50px;
+}
+.btn-secondary {
+  position: absolute;
+  top: 87%;
+  left: 5%;
+  z-index: 10;
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-semi-bold);
+  color: #fff;
+  background-color: var(--primary-btn-color);
+  border-radius: 8px;
+  border: none;
+  padding: 40px;
+  /* margin-top: 35px; */
+  transition: transform ease-in 0.1s;
+}
+.btn_secondary_text {
+  color: #fff;
+  font-size: var(--h1-font-size);
 }
 
 /* ================ Feature You will Love Styles Ends ================ */
