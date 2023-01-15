@@ -470,7 +470,7 @@ footer {
   }
 
   .feature_img_container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .features_description,
   .some_facts_title {
